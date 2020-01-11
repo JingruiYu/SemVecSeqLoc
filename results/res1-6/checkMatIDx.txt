@@ -1,0 +1,12 @@
+0 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResult.txt
+1 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultHalfmean.txt
+2 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultNoNaN.txt
+3 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultNoenhance.txt
+4 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultStep10.txt
+5 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultStep2.txt
+6 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultStep4.txt
+7 : /home/yujr/openslam_openseqslam/results/resAll/ManVecResultStep6.txt
+8 : /home/yujr/openslam_openseqslam/results/resAll/OrgResult.txt
+9 : /home/yujr/openslam_openseqslam/results/resAll/SemColOrgLagRes.txt
+10 : /home/yujr/openslam_openseqslam/results/resAll/SemColOrgRes.txt
+11 : /home/yujr/openslam_openseqslam/results/resAll/SemOrgResult.txt
