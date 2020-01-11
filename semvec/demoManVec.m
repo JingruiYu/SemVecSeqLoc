@@ -28,12 +28,12 @@ clear all; clc;
     
     % Nordland mkz dataset
     ds.name = 'mkz';
-    ds.imagePath = '../datasets/ManVec/mkz';    
+    ds.imagePath = '../datasets/ManVec/mkz190_40';    
     ds.prefix='images-';
     ds.extension='.bmp';
     ds.suffix='';
-    ds.imageSkip = 1;     % use every n-nth image
-    ds.imageIndices = 1:ds.imageSkip:628;    
+    ds.imageSkip = -1;     % use every n-nth image
+    ds.imageIndices = 190:ds.imageSkip:40;    
     ds.savePath = 'results';
     ds.saveFile = sprintf('%s-%d-%d-%d', ds.name, ds.imageIndices(1), ds.imageSkip, ds.imageIndices(end));
     
@@ -47,7 +47,8 @@ clear all; clc;
 
     % Nordland seg dataset
     ds.name = 'seg';
-    ds.imagePath = '../datasets/ManVec/seg';   
+    ds.imagePath = '../datasets/ManVec/seg';  
+    ds.imageSkip = 1;     % use every n-nth image
     ds.imageIndices = 1:ds.imageSkip:203;    
     ds.saveFile = sprintf('%s-%d-%d-%d', ds.name, ds.imageIndices(1), ds.imageSkip, ds.imageIndices(end));
     % ds.crop=[5 1 64 32];
@@ -89,7 +90,7 @@ clear all; clc;
     for i=1:1:size(m,1)
         mm(i,:) = [i,m(i)];
     end
-    fid=fopen('ManVecResult.txt','wt');
+    fid=fopen('ManVecmkz190_40.txt','wt');
     [row,col]=size(mm);
     for i=1:1:row
         for j=1:1:col
